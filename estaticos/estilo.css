@@ -1,0 +1,399 @@
+body{
+    width: 100%;
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: red; 
+}
+#inicio{ /*contenedor inicio va a ocupar el 100 del ancho del body*/
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-image:url(/imagenes/descarga.jpg); /*se coloca la imagen para el fondo*/
+    background-size:cover; /*esto hace que se adapte dependiendo del tamaño, tanto a lo ancho como a lo latgo*/
+    background-position: center;/*centra la imagen*/
+    height: 90vh;/**/
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.fila{/*esto va a ocupar el 100% de su contenedor*/
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+
+#cabecera{
+    margin: 0; /* eliminar margin para que la imagen se extienda a toda la pantalla */
+    max-width: 100%; /*ocupa el ancho total de la pagina*/
+    justify-content: space-between;
+    align-items: center;  /*pone en el centro en tema de altura los objetos*/
+    display: flex;
+}
+
+#logo{
+  width: 60%; /*ocupa el 100 porciento del tamaño de su recipiente*/
+  height: auto;/*el 100% del alto del recipiente que lo contiene*/
+  object-fit:cover; /*se adapta al tamaño del recipiente*/
+    
+}
+.navlink{
+    display: flex; /*significa que los elementos que se encuentren dentro se adaptarán al tamaño de espacio disponible*/
+    align-items: center; /*pone en el centro en tema de altura los objetos*/
+
+}
+.navlink a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navlink a:hover {
+    color: orange; /* Cambia a un color distinto al pasar el ratón */
+}
+
+.navegador{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    flex:1; /* cada elemento ocupa un espacio igual */
+
+}
+
+#formageometrica {
+    position: relative;
+    display: flex; /*permite alinear el conenido en una direccion*/
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    min-height: 300px;
+    max-width: 100%;
+}
+
+#formageometrica::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/Captura_de_pantalla_2024-07-18_153051-removebg-preview.png);
+    background-size: cover;/* Hace que la imagen se ajuste dentro del div */
+    background-repeat: no-repeat;/* Evita que la imagen se repita */
+    background-position: bottom center;/* Asegura que la imagen se pegue a la parte inferior y se centre horizontalmente */
+    filter: grayscale(100%) brightness(0%);/*el grayscale hace que la imagen sea a blanco y negro y el brightness le quita el brillo a la imagen*/
+    z-index: 0; /* Asegura que el fondo esté detrás del contenido */
+    max-width: 100%;
+}
+/*prectica*/
+
+.contenedor-info {
+    margin-top: 10%; /*separacion con el tope del div*/
+    position: relative;
+    z-index: 1;
+    /*background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    border-radius: 50% 50% 0 0; /* Redondea la parte superior del contenedor */
+    padding: 30px;
+    width: 40%;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo-forma p {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.contenido-forma p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#boton-geometrica {
+    margin: 20px 0;
+}
+
+
+.lineablanca {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin: 20px auto;
+}
+/*pantallas medianas*/
+@media (max-width: 768px) {
+    .contenedor-info {
+        width: 80%;
+        padding: 20px;
+    }
+
+    #titulo-forma p {
+        font-size: 40px;
+    }
+
+    .contenido-forma p {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .contenedor-info {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #titulo-forma p {
+        font-size: 30px;
+    }
+
+    .contenido-forma p {
+        font-size: 14px;
+    }
+}
+/*fin*/
+
+.Informacion{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;  /* permite que las columnas se ajusten al tamaño de la pantalla */
+    justify-content: space-between; /* espacio entre columnas */
+    align-items: center;/*alineas los contenedores en el centro*/
+    background-color: black;
+    border-top: white;
+    border-style: solid;
+    border-width: 1px;
+    /*margin-bottom: 1px;
+    border-bottom: white;*/
+}
+.info{
+    flex: 1; /*cada item ocupará la misma cantidad de espacio proporcional*/
+    margin: 20px;/*margen en las 4 direcciones, es decir, separacion*/
+    text-align: center; /*alineamos el texto en el centro del contenedor*/
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%; /*el ancho que ocupe será de todo su contenedor(columna), cosa que al ser la pantalla pequeña se pone una encima de otra*/
+    box-sizing:border-box;
+    padding: 10px;
+    word-wrap: break-word;/* aseguramos que el texto se ajuste dentro del contenedor */
+    overflow-wrap: break-word;/* aseguramos que el texto se ajuste dentro del contenedor */
+
+    
+}
+.info:first-child{
+    font-size: 40px;
+    text-align: left;
+}
+
+#mapagoogle{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+}
+#mapa{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#Promociones{
+    background-color: black;
+    flex-wrap: wrap;
+    display: flex; /*organiza el bloque como un contenedor en el que por defecto los hijos se organizan en una fila */
+    flex-direction: column;/*con esto estamos indicando que los hijos en vez de organizarse en una fila lo hagan en una columna*/
+    /*flex-direction: row;*/
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+#fila1{
+    display: flex;
+    flex-wrap: wrap;  /* permite que las columnas se ajusten al tamaño de la pantalla */
+    justify-content: space-between; /* espacio entre columnas */
+    align-items: center;/*alineas los contenedores en el centro*/
+    width: 100%;
+    /*margin: 15px;
+    padding: 10px;
+    text-align: left;
+    font-size: 40px;*/
+}
+.quefila{
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 40px;
+    padding: 10px;
+}
+.fila2{
+    display: flex;
+    flex-wrap: wrap;  /* permite que las columnas se ajusten al tamaño de la pantalla */
+    width: 100%;
+    align-items: center;/*centra los elementos verticalmente*/
+    margin-bottom: 20px;
+}
+.imagenEvento{
+    flex: 1;
+    display: flex;
+    justify-content:center ; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    overflow: hidden;
+    height: 300px;
+}
+.imagenEvento img{
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    transition: transform 0.3s ease; /* Añade una transición para el efecto de zoom */
+}
+.imagenEvento:hover img {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el ratón por encima */
+}
+.inforeventos{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center; /* Alinea los elementos a al centro */
+    padding: 20px; /* Añade padding alrededor del texto */
+    color: white;
+    max-width: 100%;
+}
+.Evento{
+    font-size:  25px;
+    margin-bottom: 10px;
+}
+.Actividad{
+    font-size:  35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.DiasEvento{
+    font-size: 15px;
+}
+.HorasEvento{
+    font-size: 15px;
+}
+.reservaBtn {
+    padding: 10px 20px; /* Agrega espacio dentro del botón: 10px en la parte superior e inferior, 20px en los lados */
+    font-size: 16px;
+    border: 1px solid white;/*Agrega un borde blanco de 1px de ancho alrededor del botón */
+    background: none;/* Elimina cualquier fondo por defecto del botón */
+    color: white;/* Establece el color del texto del botón en blanco */
+    cursor: pointer;/* Cambia el cursor al icono de "mano" cuando se pasa sobre el botón */
+    transition: background 0.3s, color 0.3s; /* Añade una transición suave para los cambios de fondo y color, con una duración de 0.3 segundos */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+}
+
+.reservaBtn:hover { /* Estilo para el botón de reserva cuando se pasa el cursor sobre él */
+    background: white;/* Cambia el fondo del botón a blanco */
+    color: black;/* Cambia el color del texto del botón a negro */
+}
+
+#PadreRedes{
+  width: 100%;
+  display: flex;
+}
+#contenido-redes{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    /*color: white;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+*/
+.enlaces{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 10px;
+    align-items: flex-start;
+    align-content: center;
+    box-sizing: border-box;
+}
+.enlaces >p{
+    width: 100%;
+}
+
+.enlaces-redes{
+    margin: 0;
+    padding: none;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
+.enlaces >a{
+    width: 100%;
+}
+
+.titulos-redes{
+    font-size: 25px;
+}
+
+#logo-redes{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) { /*esto será la configuracion del apartado de informacion cuando nos encontremos en dispositivos moviles*/
+    #Informacion {
+
+        flex-direction: column;/*camba la direccion de dilas a columnas*/
+        align-items: center;/*alinea los items/contenedores en el centro*/
+    }
+
+    .info {
+        max-width: 100%;
+        text-align: left; /* centramos el texto en dispositivos más pequeños */
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .info:first-child {
+        text-align: center; /* centramos el texto en dispositivos más pequeños */
+    }
+
+    #Promociones{
+        align-items: center;
+        
+    }
+    .quefila{
+        text-align: left;
+        max-width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+}

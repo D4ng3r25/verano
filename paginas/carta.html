@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <link type="text/css" rel="stylesheet" href="/carta.css"/><!--Asignamos una hoja css a nuestro html -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"><!--estp es el primer link de boostrap --->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script><!--Segundo link de boostrap --->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Para que sea responsive --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!--Para usar logos de insta y fb-->
+</head>
+<body class="cuerpo">
+    <div id="inicio">
+        <nav id="navbar">
+            <div class="fila" id="cabecera">
+                <a href="/main">
+                    <img src="/imagenes/logaster-2019-02-t-retro-burger-bar-logo-1-Photoroom.png" id="logo">
+                </a>
+                <div class="navlink">
+                    <a href="/carta" class="navegador" >CARTA</a>
+                    <a href="/reserva" class="navegador" id="reserva">RESERVAR</a>
+                    <a href="#redes" class="navegador" id="contacto">CONTACTO</a>
+                </div>
+        </div> 
+        </nav>
+    </div>
+    <div id="imagen_cabecera"> 
+        <img src="/imagenes/servir.jpg" alt="">
+    </div>  
+    <!--esto va a hacer el contenedor de toda la información de la carta -->
+    <div class="menu" id="menus">
+        <div class="cartafila"><p>MENÚ:</p></div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila"><p class="titulo">Cervezas</p></div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza Mahou</p></div>
+                <div class="precio_producto"><p>2.5€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza San Miguel</p></div>
+                <div class="precio_producto"><p>2€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza Alambra</p></div>
+                <div class="precio_producto"><p>3€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza Estrella Damm</p></div>
+                <div class="precio_producto"><p>2€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza Cruzcampo</p></div>
+                <div class="precio_producto"><p>1.8€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Cerveza Estrella Galicia</p></div>
+                <div class="precio_producto"><p>2.3€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="espacio"></div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila"><p class="titulo">Cócteles</p></div>
+         
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Pisco Sour</p></div>
+                <div class="precio_producto"><p>6€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Machu Picchu</p></div>
+                <div class="precio_producto"><p>5.5€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+        
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Martini Clásico</p></div>
+                <div class="precio_producto"><p>6€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Mojito Clásico</p></div>
+                <div class="precio_producto"><p>5€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Bloody Mary</p></div>
+                <div class="precio_producto"><p>6.5€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Margarita</p></div>
+                <div class="precio_producto"><p>6€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="espacio"></div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila"><p class="titulo">Platos</p></div>
+         
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Ceviche</p></div>
+                <div class="precio_producto"><p>7€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+        <div class="lineablanca"></div>
+
+        <div class="cartafila">
+            <div class="gridcontenedor">
+                <div class="nombre_producto"><p>Causa</p></div>
+                <div class="precio_producto"><p>6.5€</p></div>
+                <div class="boton_despliegue"><button class="arrow-button"><span class="arrow down"></span></button></div>
+            </div>
+            <div class="imagen_desplegable">
+                <!-- Aquí puedes colocar la imagen que se desplegará con JavaScript en el futuro -->
+                <img src="ruta/a/tu-imagen.jpg" alt="Descripción de la imagen" class="imagen_oculta">
+            </div>
+        </div>
+
+    </div>
+    <!--apartado para el mapa de google-->
+    <div id="mapagoogle">
+    <iframe id="mapa" cargando="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ5amMGgD_Xw0RagY6BbtggzY&key=AIzaSyCIQkKUxVQ45Mky9veFEYE85FWRe-8__xo"></iframe>
+    </div>
+
+    <!--apartado de contacto como las redes sociales -->
+    <div id="redes">
+        <div id="contenido-redes">
+
+            <div></div>
+
+            <div class="enlaces">
+                <a href="/main" class="enlaces-redes"><img src="/imagenes/logaster-2019-02-t-retro-burger-bar-logo-1-Photoroom.png" id="logo-redes"></a>
+                <a href="#menus" class="enlaces-redes" >CARTA</a>
+                <a href="/reserva" class="enlaces-redes" id="reserva">RESERVAR</a>
+                <a href="#redes" class="enlaces-redes" id="contacto">CONTACTO</a>
+            </div>
+
+            <div class="enlaces"> 
+                <p class="titulos-redes">Contacto</p>
+                <p>+31 722 43 15 50</p>
+                <p>machupisco@gmail.com</p>
+                <p class="titulos-redes">Únetenos</p>
+                <div>
+                    <a href="https://www.facebook.com" class="enlaces-redes" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/barmachupisco/" class="enlaces-redes" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="enlaces">
+                <p class="titulos-redes">Horarios</p>
+                <p>Lunes-Viernes: 9:00-1:00</p>
+                <p>Sábado: 10:00-23:40</p>
+                <P class="titulos-redes">Direccion</P>
+                <p>Calle Compositor Vicente Asencio 1 bajo</p>
+                <p>12005, Castellón de la Plana, ES</p>
+            </div>
+
+            <div></div>
+        
+        </div>
+
+    </div>
+</body>
+</html>
