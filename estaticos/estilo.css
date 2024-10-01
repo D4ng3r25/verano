@@ -48,8 +48,9 @@ body{
 .navlink{
     display: flex; /*significa que los elementos que se encuentren dentro se adaptarán al tamaño de espacio disponible*/
     align-items: center; /*pone en el centro en tema de altura los objetos*/
-
+    flex-wrap: wrap;
 }
+
 .navlink a {
     text-decoration: none;
     color: white;
@@ -77,7 +78,7 @@ body{
     align-items: center;
     color: white;
     padding: 20px;
-    min-height: 300px;
+    min-height: 300px;/*90% de la pantalla del dispositivo al cargar la página*/
     max-width: 100%;
 }
 
@@ -362,7 +363,7 @@ display: flex;
 }
 
 #logo-redes{
-    height: 50px;
+    height: 10%;
     margin-bottom: 20px;
 }
 
